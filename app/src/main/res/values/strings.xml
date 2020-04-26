@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TravelApp</string>
+    <string name="home">Home</string>
+    <string name="places">Places</string>
+    <string name="lakes">Lakes</string>
+    <string name="petrol">Petrol Station</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="Monuments">Monuments</string>\
+
+</resources>
