@@ -4,57 +4,50 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.travelapp.Modal.Location;
+import com.example.travelapp.Modal.Petrol;
 
 import java.util.ArrayList;
 
-class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Holder> {
+class HospitalAdapter extends RecyclerView.Adapter<HospitalAdapter.Holder> {
     Context context;
-    ArrayList<Location> locationData;
+    ArrayList<Petrol> petrolData;
 
-    public HomeAdapter(Context context, ArrayList<Location> locationData) {
+    public HospitalAdapter(Context context, ArrayList<Petrol> petrolData) {
         this.context = context;
-        this.locationData = locationData;
+        this.petrolData = petrolData;
     }
 
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.hospital, parent, false);
         return new Holder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
-
-        holder.img.setImageResource(locationData.get(position).getImage());
-        holder.tvName.setText(locationData.get(position).getNameLocation());
-        holder.tvDesc.setText(locationData.get(position).getDescription());
-
+        holder.tvName.setText(petrolData.get(position).getName());
+        holder.tvAddress.setText(petrolData.get(position).getAddress());
     }
 
     @Override
     public int getItemCount() {
-
-        return locationData.size();
+        return petrolData.size();
     }
 
     public class Holder extends RecyclerView.ViewHolder {
-        ImageView img;
         TextView tvName;
-        TextView tvDesc;
+        TextView tvAddress;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
-            img = itemView.findViewById(R.id.ivImage);
             tvName = itemView.findViewById(R.id.tvName);
-            tvDesc = itemView.findViewById(R.id.tvDesc);
+            tvAddress = itemView.findViewById(R.id.tvAddress);
         }
     }
 }

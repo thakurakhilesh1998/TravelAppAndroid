@@ -25,12 +25,6 @@
             android:icon="@drawable/baseline_home_24"
             />
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/places"
-            android:id="@+id/tbplaces"
-            android:icon="@drawable/baseline_place_24"/>
-        <com.google.android.material.tabs.TabItem
             style="@style/tabitem"
             android:id="@+id/lakes"
             android:icon="@drawable/baseline_pool_24"
@@ -46,12 +40,6 @@
             android:id="@+id/tbHospital"
             android:text="@string/hospitals"
             android:icon="@drawable/baseline_local_hospital_24"/>
-        <com.google.android.material.tabs.TabItem
-            style="@style/tabitem"
-            android:id="@+id/monuments"
-            android:text="@string/Monuments"
-            android:icon="@drawable/baseline_location_city_24"
-            />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager

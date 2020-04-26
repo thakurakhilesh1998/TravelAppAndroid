@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.travelapp.Data.LocatonRandomData;
+import com.example.travelapp.Data.PetrolData;
 
-public class Home extends Fragment {
-    RecyclerView rvHome;
+public class Hospital extends Fragment {
+    RecyclerView rvHospital;
 
     @Nullable
     @Override
@@ -25,11 +25,10 @@ public class Home extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvHome = view.findViewById(R.id.rvHome);
-        RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
-        rvHome.setLayoutManager(manager);
-        HomeAdapter homeAdapter = new HomeAdapter(getContext(), LocatonRandomData.getLocationData());
-        rvHome.setAdapter(homeAdapter);
-
+        rvHospital = view.findViewById(R.id.rvHome);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
+        rvHospital.setLayoutManager(layoutManager);
+        HospitalAdapter hospitalAdapter = new HospitalAdapter(getContext(), PetrolData.getHospitalData());
+        rvHospital.setAdapter(hospitalAdapter);
     }
 }

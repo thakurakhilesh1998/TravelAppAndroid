@@ -10,51 +10,50 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.travelapp.Modal.Location;
+import com.example.travelapp.Modal.Lake;
 
 import java.util.ArrayList;
 
-class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Holder> {
+class LakesAdapter extends RecyclerView.Adapter<LakesAdapter.Holder> {
     Context context;
-    ArrayList<Location> locationData;
+    ArrayList<Lake> lakeData;
 
-    public HomeAdapter(Context context, ArrayList<Location> locationData) {
+    public LakesAdapter(Context context, ArrayList<Lake> lakeData) {
         this.context = context;
-        this.locationData = locationData;
+        this.lakeData = lakeData;
     }
 
     @NonNull
     @Override
-    public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public LakesAdapter.Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
         return new Holder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Holder holder, int position) {
-
-        holder.img.setImageResource(locationData.get(position).getImage());
-        holder.tvName.setText(locationData.get(position).getNameLocation());
-        holder.tvDesc.setText(locationData.get(position).getDescription());
-
+    public void onBindViewHolder(@NonNull LakesAdapter.Holder holder, int position) {
+        holder.tvName.setText(lakeData.get(position).getLakeName());
+        holder.tvDesc.setText(lakeData.get(position).getDescription());
+        holder.ivImage.setImageResource(lakeData.get(position).getLakePhoto());
     }
 
     @Override
     public int getItemCount() {
-
-        return locationData.size();
+        return lakeData.size();
     }
 
     public class Holder extends RecyclerView.ViewHolder {
-        ImageView img;
         TextView tvName;
         TextView tvDesc;
+        ImageView ivImage;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
-            img = itemView.findViewById(R.id.ivImage);
             tvName = itemView.findViewById(R.id.tvName);
             tvDesc = itemView.findViewById(R.id.tvDesc);
+            ivImage = itemView.findViewById(R.id.ivImage);
         }
     }
 }
+
+

@@ -10,20 +10,25 @@ import androidx.fragment.app.FragmentPagerAdapter;
 class MyAdapter extends FragmentPagerAdapter {
     Context context;
     int tabcount;
-    public MyAdapter(Context context,FragmentManager fm, int tabcount) {
+
+    public MyAdapter(Context context, FragmentManager fm, int tabcount) {
         super(fm);
-        this.context=context;
-        this.tabcount=tabcount;
+        this.context = context;
+        this.tabcount = tabcount;
     }
+
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position)
-        {
+        switch (position) {
             case 0:
-                 return (new Home());
-            case 1:
                 return (new Home());
+            case 1:
+                return (new Lakes());
+            case 2:
+                return (new PetrolStation());
+            case 3:
+                return (new Hospital());
         }
         return (new Home());
     }

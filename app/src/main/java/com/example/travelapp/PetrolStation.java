@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.travelapp.Data.LocatonRandomData;
+import com.example.travelapp.Data.PetrolData;
 
-public class Home extends Fragment {
+public class PetrolStation extends Fragment {
     RecyclerView rvHome;
 
     @Nullable
@@ -28,8 +28,7 @@ public class Home extends Fragment {
         rvHome = view.findViewById(R.id.rvHome);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         rvHome.setLayoutManager(manager);
-        HomeAdapter homeAdapter = new HomeAdapter(getContext(), LocatonRandomData.getLocationData());
-        rvHome.setAdapter(homeAdapter);
-
+        PetrolStaionAdapter petrolStaionAdapter = new PetrolStaionAdapter(getContext(), PetrolData.getPetrolData());
+        rvHome.setAdapter(petrolStaionAdapter);
     }
 }

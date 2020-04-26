@@ -3,4 +3,6 @@
     <dimen name="subpadding">8dp</dimen>
     <dimen name="elevation">3dp</dimen>
     <dimen name="radius">4dp</dimen>
+    <dimen name="mainpaddding">16dp</dimen>
+    <dimen name="subHeadings">12sp</dimen>
 </resources>
