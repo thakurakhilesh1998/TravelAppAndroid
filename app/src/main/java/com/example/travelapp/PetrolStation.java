@@ -28,7 +28,7 @@ public class PetrolStation extends Fragment {
         rvHome = view.findViewById(R.id.rvHome);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         rvHome.setLayoutManager(manager);
-        PetrolStaionAdapter petrolStaionAdapter = new PetrolStaionAdapter(getContext(), PetrolData.getPetrolData());
+        PetrolStaionAdapter petrolStaionAdapter = new PetrolStaionAdapter(getContext(), PetrolData.getPetrolData(getContext()));
         rvHome.setAdapter(petrolStaionAdapter);
     }
 }

@@ -28,7 +28,7 @@ public class Home extends Fragment {
         rvHome = view.findViewById(R.id.rvHome);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         rvHome.setLayoutManager(manager);
-        HomeAdapter homeAdapter = new HomeAdapter(getContext(), LocatonRandomData.getLocationData());
+        HomeAdapter homeAdapter = new HomeAdapter(getContext(), LocatonRandomData.getLocationData(getContext()));
         rvHome.setAdapter(homeAdapter);
 
     }

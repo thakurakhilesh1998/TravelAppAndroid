@@ -28,7 +28,7 @@ public class Hospital extends Fragment {
         rvHospital = view.findViewById(R.id.rvHome);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         rvHospital.setLayoutManager(layoutManager);
-        HospitalAdapter hospitalAdapter = new HospitalAdapter(getContext(), PetrolData.getHospitalData());
+        HospitalAdapter hospitalAdapter = new HospitalAdapter(getContext(), PetrolData.getHospitalData(getContext()));
         rvHospital.setAdapter(hospitalAdapter);
     }
 }

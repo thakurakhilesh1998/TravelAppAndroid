@@ -29,7 +29,7 @@ public class Lakes extends Fragment {
         rvLakes = view.findViewById(R.id.rvHome);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         rvLakes.setLayoutManager(layoutManager);
-        LakesAdapter lakesAdapter = new LakesAdapter(getContext(), LakeData.getLakeData());
+        LakesAdapter lakesAdapter = new LakesAdapter(getContext(), LakeData.getLakeData(getContext()));
         rvLakes.setAdapter(lakesAdapter);
     }
 }

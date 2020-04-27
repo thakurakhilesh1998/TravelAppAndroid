@@ -7,4 +7,41 @@
     <string name="hospitals">Hospitals</string>
     <string name="Monuments">Monuments</string>\
 
+    <string name="lakename1">Govind Sagar Lake</string>
+    <string name="lakename2">Sir Khad</string>
+    <string name="lakename3">Markanda</string>
+    <string name="lakename4">Rukmni Kund</string>
+
+    <string name="lakdes1">It is main attraction of the Bilaspur, It is famous for its trout fish and water sports and transportation</string>
+    <string name="lakedes2">It is main trubutory of the satluj river, It is life line for many places in Bilaspur as its water has many water supply built on it.</string>
+    <string name="lakedes3">It is very religious place. It is present on the shadow of the BandlaDhar and also gets its water form bandla dhar</string>
+    <string name="lakedes4">It is sign of sacrifice sign of one sacrifice her life for the betterment of his State</string>
+
+    <string name="petrol1">Hindustan Petroleum</string>
+    <string name="petrol2">Reliance Petroleum</string>
+    <string name="petrol3">Assam Petrol</string>
+    <string name="petrol4">India Oil</string>
+
+    <string name="petroladd1">Near Dakri Chowk Ghumarwin Bilaspur-174021</string>
+    <string name="petroladd2">AwdhaniGhat Ghumarwin Bilaspur-174021</string>
+    <string name="petroladd3">Awari Near Ghumani Chowk Bilaspur</string>
+    <string name="petroladd4">Nihari Ghumarwin Bilaspur 174026</string>
+
+    <string name="hospitalna1">Civil Hospital Ghumarwin</string>
+    <string name="hospitalna2">Primary Health Center Panol</string>
+    <string name="hospitalna3">Zonal Hospital Bilaspur</string>
+
+    <string name="hosadd1">Near Dakri Chowk Ghumarwin Bilaspur</string>
+    <string name="hosadd2">Panol PO Amarpur Teh. Ghumarwin Bilaspur</string>
+    <string name="hosadd3">Bilaspur Himachal Pradesh</string>
+
+    <string name="locname1">Bilaspur</string>
+    <string name="locname2">Bandladhar</string>
+    <string name="locname3">Naina Devi Mata Mandir</string>
+    <string name="locname4">Govind Sagar Lake</string>
+
+    <string name="locaddress1">It is distric headquater and situated on the bank of river staluj</string>
+    <string name="locaddress2">It is one of the highest peak in Bilaspur. It is famous for  its Paragliding activities.</string>
+    <string name="locaddress3">It is very auspicious temple for Hindus. It is one of the Saktipith situate in Bilaspur Distric</string>
+    <string name="locaddress4">I added to the beauty of the Bilaspur, It is made due to dam on Satluj River called as Bhakra Dam</string>
 </resources>
